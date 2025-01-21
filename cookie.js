@@ -1,4 +1,4 @@
-// cookie
+// cookie popup
 document.addEventListener("DOMContentLoaded", () => {
     const cookieComponent = document.querySelector('[cookie="wrapper"]');
     const cookieButton = document.querySelector('[cookie="btn"]');
