@@ -10,7 +10,7 @@ gsap.timeline()
         stagger: 0.1,
         duration: 1.5,
         ease: "power3.out"
-    })
+    }, 0)
     .fromTo(".hm-hero_logo", {
         autoAlpha: 0,
         y: "-1rem"
@@ -20,7 +20,7 @@ gsap.timeline()
         stagger: 0.1,
         duration: 0.5,
         ease: "power1.out"
-    });
+    }, 0.5);
 
 //Анимируем видео в hero блоке
 gsap.fromTo(
@@ -71,6 +71,27 @@ gsap.from('[textsplit] .word', {
     duration: 0.1,
     ease: 'power3.in',
     stagger: 0.05
+})
+
+gsap.to('[team-img]', {
+    scrollTrigger: {
+        trigger: "[team-img]",
+        start: "top bottom",
+        end: "bottom top",
+        scrub: 3
+    },
+    y: '-30%'
+})
+
+gsap.from('.tag-wrapper', {
+    scrollTrigger: {
+        trigger: ".about_team-wrapper",
+        start: "top center"
+    },
+    y: '-25%',
+    autoAlpha: 0,
+    stagger: 0.25,
+    duration: 0.5
 })
 
 // Анимация блока Case
