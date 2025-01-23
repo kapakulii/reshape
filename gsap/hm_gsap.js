@@ -80,7 +80,7 @@ gsap.to('[team-img]', {
         end: "bottom top",
         scrub: 3
     },
-    y: '-30%'
+    y: '-20%'
 })
 
 gsap.from('.tag-wrapper', {
